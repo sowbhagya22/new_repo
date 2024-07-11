@@ -1,8 +1,8 @@
-create or replace schema new_db.new_sc;
+create or replace schema if not exists new_db.new_sc;
  
  
 -- Create the table
-CREATE OR REPLACE TABLE new_sc.EMPLOYEES (
+CREATE OR REPLACE TABLE if not exists new_sc.EMPLOYEES (
     ID INT,
     FIRST_NAME STRING,
     LAST_NAME STRING,
