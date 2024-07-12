@@ -5,3 +5,11 @@ CREATE or replace TABLE users (
     email STRING,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+INSERT INTO users (name, email)
+VALUES 
+('John Doe', 'john.doe@example.com'),
+('Jane Smith', 'jane.smith@example.com'),
+('Alice Johnson', 'alice.johnson@example.com');
+
